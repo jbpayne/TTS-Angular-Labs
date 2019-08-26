@@ -35,7 +35,7 @@ Examine the following commands:
 
 Create a new empty folder and change to that folder.
 
-Run the ng command to create a new app.
+Run the `ng` command to create a new app.
 
 next type `ng serve --open to` run the basic application shell.
 
