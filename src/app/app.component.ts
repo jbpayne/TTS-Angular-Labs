@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TTS Angular Labs';
+    // Change the title property in app.component.ts and save the file.
+    // title = 'TTS-Angular-Labs';
+    title = `Jonathan Payne's Angular Lab Project`;
 }
