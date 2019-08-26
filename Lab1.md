@@ -17,19 +17,19 @@ help` .
 
 Examine the following commands:
 
-new
+[new](https://angular.io/cli/new)
 
-add
+[add](https://angular.io/cli/add)
 
-generate
+[generate](https://angular.io/cli/generate)
 
-build
+[build](https://angular.io/cli/build)
 
-serve
+[serve](https://angular.io/cli/serve)
 
-config
+[config](https://angular.io/cli/config)
 
-run
+[run](https://angular.io/cli/run)
 
 Create a new empty folder and change to that folder.
 
