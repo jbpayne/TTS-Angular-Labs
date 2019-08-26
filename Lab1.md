@@ -2,12 +2,14 @@
 
 In the command prompt, issue the following command to install the Angular CLI
 
-```npm install -g @angular/cli
+```
+npm install -g @angular/cli
 ```
 
 and again, to verify:
 
-```ng -version
+```
+ng -version
 ```
 
 Run the help command to get an overview of the number of commands available.
