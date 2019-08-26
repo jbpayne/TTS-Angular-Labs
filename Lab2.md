@@ -1,8 +1,8 @@
-###Angular Services LAB and Homwork
+### Angular Services LAB and Homwork
 
 All the statements in the first part of the lab will build on the lab from the previous day. So if that lab is not complete go back and ensure that lab is complete first.
 
-####Routing
+#### Routing
 
 Add a routing component using the `ng generate module` command at the command prompt.
 
@@ -24,7 +24,7 @@ Style the pages links, either as horizontal or vertical items so they resemble a
 Finally, create another component that will serve as the application default. Give it some additonal
 "Welcome to the site" verbiage and make it the default route in the routing system.
 
-####Services and DI
+#### Services and DI
 
 Next, create a simple `Person` class in the `src/app` folder. Some applications would also create this in a
 sub-folder called `models` or `domain-classes`, it's entirely up to you.
@@ -42,7 +42,7 @@ modify the html to use interpolation to display the properties of the person.
 
 Use the `ngOnInit()` method to get the `Person` from the service.
 
-####Observables
+#### Observables
 
 Change the service call to return an `Obervable` rather than a `Person` object. Change the call in the
 component to `subscribe()` to the call rather than being a synchronous call.
@@ -67,7 +67,7 @@ this.delay(4000).then(any => {return peep});
 Notice how the value will automatically display after the waiting period. This simulates a long-running
 call to get the data.
 
-####http
+#### http
 
 http will be covered as part of the lab below. In that tutorial/walkthrough you will simulate a web call.
 
