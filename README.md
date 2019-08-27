@@ -16,7 +16,7 @@ This repository contains the four Angular labs for Tech Talent Select, with each
 [Lab 2 Demo](https://jbpayne.github.io/TTS-Angular-Labs/Lab2/)
 
 
-[Lab 3](./Lab3.md) continues work with components, integrates with routing, adds a service for the component and uses dependency injection to make use of the service, and modifies the service to use an observable.
+[Lab 3](./Lab3.md) explores different ways to create forms, testing/TDD, animation, and Material Design.
 
 [Lab 3 Code](./Lab3)
 
