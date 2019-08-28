@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewComponent } from './new/new.component';
+import { NewerComponent } from './newer/newer.component';
+import { DefaultComponent } from './default/default.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewComponent
+    NewComponent,
+    NewerComponent,
+    DefaultComponent
   ],
   imports: [
     BrowserModule,
