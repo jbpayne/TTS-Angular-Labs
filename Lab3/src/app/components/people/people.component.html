@@ -1,0 +1,15 @@
+<p>People will load here:</p>
+
+<!-- modify the html to use interpolation to display the properties of the person 
+Go back and change your first application and service to return multiple people and display a list.
+-->
+<div>
+  <ol>
+    <li *ngFor="let person of people">{{person.firstName}} {{person.lastName}}
+      <span *ngIf="person.favoriteCheeses"> - Favorite cheeses:
+        <span *ngFor="let cheese of person.favoriteCheeses; let isLast = last">{{cheese}}{{isLast ? '' : ', '}}
+        </span>
+      </span>
+    </li>
+  </ol>
+</div>

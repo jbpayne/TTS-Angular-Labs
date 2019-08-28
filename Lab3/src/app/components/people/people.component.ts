@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonService } from '../person.service';
-import { Person } from '../Person';
+import { PersonService } from '../../services/person.service';
+import { Person } from '../../models/Person';
 
 @Component({
-  selector: 'app-newer',
-  templateUrl: './newer.component.html',
-  styleUrls: ['./newer.component.css']
+  selector: 'app-people',
+  templateUrl: './people.component.html',
+  styleUrls: ['./people.component.css']
 })
-export class NewerComponent implements OnInit {
+export class PeopleComponent implements OnInit {
 
   // Pick one of the components and inject the service.
   constructor(private personService: PersonService) { }
@@ -18,7 +18,7 @@ export class NewerComponent implements OnInit {
  
     // Change the call in the component to subscribe() to the call rather than being a synchronous call.
     // call the method to delay before returning the value:
-    this.personService.delay(4000).then(() => this.personService.getPeople(this.personService.people).subscribe(people => this.people = people));
+    this.personService.delay().then(() => this.personService.getPeople(this.personService.people).subscribe(people => this.people = people));
     }
 
   // Create a member variable of type Person

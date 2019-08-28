@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 
 // In the Service class, reference the Person class from above. 
-import { Person } from './Person';
+import { Person } from '../models/Person';
 import { Observable, of } from 'rxjs';
+import { Data } from '../mocks/default';
 
 @Injectable({
   providedIn: 'root'
@@ -17,10 +18,10 @@ export class PersonService {
 
   // In the constructor for the service give it some default values.
   constructor() {
-    this.personA = new Person("Abe", "Froman");
-    this.personB = new Person("Ferris", "Bueller");
-    this.personC = new Person("Cameron", "Frye");
-    this.people = [this.personA, this.personB, this.personC];
+    this.personA = Data.personA;
+    this.personB = Data.personB;
+    this.personC = Data.personC;
+    this.people = Data.people;
    }
 
 // Next, create a basic method to return the person such as getPerson()
@@ -32,7 +33,7 @@ export class PersonService {
 // To really see the process of Observables without a long web delay, 
 // create this function inside the service class:
 
-async delay(ms: number) {
+async delay(ms = 2000) {
 await new Promise(resolve => setTimeout(()=>resolve(), ms));
 }
 
@@ -43,7 +44,14 @@ getPerson(person: Person): Observable<Person> {
 
 // Go back and change your first application and service to return multiple people and display a list.
 getPeople(people: Person[]): Observable<Person[]> {
-  return of(people);
+  console.log(Data.people);
+  Data.people.push(this.personA);
+  console.log(Data.people);
+  return of(Data.people);
+}
+
+addPerson(person: Person) {
+  Data.people.push(person);
 }
 
 }
