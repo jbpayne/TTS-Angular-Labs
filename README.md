@@ -20,8 +20,6 @@ This repository contains the four Angular labs for Tech Talent Select, with each
 
 [Lab 3 Code](./Lab3)
 
-[Lab 3 Demo](https://jbpayne.github.io/TTS-Angular-Labs/Lab3/)
-
 ---
 
 [Tour Of Heroes Lab](./TourOfHeroes.md) this is the [Angular Tour of Heroes tutorial](https://angular.io/tutorial) on the [Angular.io](https://angular.io) site.
