@@ -8,10 +8,7 @@
 /bazel-out
 
 # dependencies
-/Lab1/node_modules
-/Lab2/node_modules
-/Lab3/node_modules
-/TourOfHeroes/node_modules
+/node_modules
 
 # profiling files
 chrome-profiler-events*.json
