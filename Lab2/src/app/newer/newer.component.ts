@@ -18,10 +18,13 @@ export class NewerComponent implements OnInit {
  
     // Change the call in the component to subscribe() to the call rather than being a synchronous call.
     // call the method to delay before returning the value:
-    this.personService.delay(4000).then(() => this.personService.getPerson(this.personService.personA).subscribe(person => this.person = person));
+    this.personService.delay(4000).then(() => this.personService.getPeople(this.personService.people).subscribe(people => this.people = people));
     }
 
   // Create a member variable of type Person
   person: Person;
+
+  // Go back and change your first application and service to return multiple people and display a list.
+  people: Person[];
 
 }

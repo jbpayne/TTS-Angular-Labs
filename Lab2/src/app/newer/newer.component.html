@@ -1,4 +1,10 @@
 <p>This is the Newer Component!</p>
 
-<!-- modify the html to use interpolation to display the properties of the person -->
-<p>Person: {{person.firstName}} {{person.lastName}}</p>
+<!-- modify the html to use interpolation to display the properties of the person 
+Go back and change your first application and service to return multiple people and display a list.
+-->
+<div>
+  <ol>
+    <li *ngFor="let person of people">Person: {{person.firstName}} {{person.lastName}}</li>
+  </ol>
+</div>
