@@ -18,11 +18,8 @@ export class PersonFormComponent {
 
   onSubmit() { 
     this.submitted = true;
-    console.log(this.model);
-    console.log(Data.people);
     // Data.people.push(this.model);
     this.personService.addPerson(this.model);
-    console.log(Data.people);
   }
 
   newPerson() {

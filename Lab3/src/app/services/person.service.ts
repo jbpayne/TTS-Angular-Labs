@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Person } from '../models/Person';
 import { Observable, of } from 'rxjs';
 import { Data } from '../mocks/default';
+import { LocalStorageService } from './local-storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -43,15 +44,16 @@ getPerson(person: Person): Observable<Person> {
 }
 
 // Go back and change your first application and service to return multiple people and display a list.
-getPeople(people: Person[]): Observable<Person[]> {
-  console.log(Data.people);
-  Data.people.push(this.personA);
-  console.log(Data.people);
-  return of(Data.people);
+getPeople(): Observable<Person[]> {
+  // return of(Data.people);
+  return of(LocalStorageService.getLocalStoragePersonArray());
 }
 
 addPerson(person: Person) {
-  Data.people.push(person);
+  // Data.people.push(person);
+  let personArray = LocalStorageService.getLocalStoragePersonArray();
+  personArray.push(person);
+  LocalStorageService.setLocalStoragePersonArray(personArray);
 }
 
 }

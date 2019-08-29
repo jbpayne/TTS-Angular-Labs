@@ -18,7 +18,7 @@ export class PeopleComponent implements OnInit {
  
     // Change the call in the component to subscribe() to the call rather than being a synchronous call.
     // call the method to delay before returning the value:
-    this.personService.delay().then(() => this.personService.getPeople(this.personService.people).subscribe(people => this.people = people));
+    this.personService.delay().then(() => this.personService.getPeople().subscribe(people => this.people = people));
     }
 
   // Create a member variable of type Person

@@ -1,4 +1,5 @@
-import { states, Address } from '../models/Address';
+import { Address } from '../models/Address';
+import { states } from '../models/states';
 import { Person } from '../models/Person';
 
 export class Data {
